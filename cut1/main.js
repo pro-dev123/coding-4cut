@@ -3,7 +3,7 @@ function showText(number) {
     document.querySelector(`#desc${number}`).classList.add("showText")
   }
 
-  function hideText(number) {
-    document.querySelector(`#desc${number}`).classList.remove("showText")
-    document.querySelector(`#desc${number}`).classList.add("hideText")
-  }
+function hideText(number) {
+  document.querySelector(`#desc${number}`).classList.remove("showText")
+  document.querySelector(`#desc${number}`).classList.add("hideText")
+}
