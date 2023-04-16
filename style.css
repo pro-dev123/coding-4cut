@@ -1,3 +1,15 @@
+a {
+    text-decoration-line: none;
+}
+
+p {
+    margin-bottom: 0;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 20px;
+}
+
 .tab {
     margin: 0;
     padding: 0;
@@ -26,8 +38,23 @@
 }
 
 .photo-cuts {
-    flex: 0 0 calc(33.33% - 10px);
+    flex: 0 0 calc(100% / 3 - 10px);
     margin: 5px;
-    height: 100px;
+    height: 250px;
     background-color: lightgray;
+
+    position: relative;
+}
+
+#cut1 {
+    background-image: linear-gradient(to left, rgb(136, 136, 136), transparent, transparent, rgb(136, 136, 136)), url(cut1/images/img1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items:flex-end; /* 세로 아래 정렬 */
+
+    text-align: center; /* 글자 중앙 정렬 */
+    background-position: center center;
 }
