@@ -1,0 +1,33 @@
+.tab {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    background-color: crimson;
+    position: fixed; /* 변경: absolute에서 fixed로 변경 */
+    top: 0; /* 변경: 위쪽에 붙도록 top 속성 추가 */
+    left: 0; /* 변경: 왼쪽에 붙도록 left 속성 추가 */
+}
+
+.title {
+    position: relative;
+
+    width: fit-content;
+
+    transform: translate(-50%);
+    left: 50%;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 105px; /* 변경: 100px + 5px 여백 */
+}
+
+.photo-cuts {
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 5px;
+    height: 100px;
+    background-color: lightgray;
+}

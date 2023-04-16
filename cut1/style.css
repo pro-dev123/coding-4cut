@@ -1,0 +1,97 @@
+/* 이서윤체 폰트 적용을 위한 코드 */
+@font-face {
+    font-family: "LeeSeoyun";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* body태그 자체에 css 요소 부여 */
+body {
+  font-family: "LeeSeoyun";
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_photos/background.png");
+}
+
+.container {
+  width: 390px;
+  background-color: #ff9d73;
+  height: 100%;
+}
+
+.photos {
+  margin-top: 30px;
+}
+
+.photo-frame {
+  background-color: white;
+  margin: 15px 20px;
+  height: 200px;
+
+  background-size: cover;
+
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-title {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.f-date {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.photo-description {
+  position: absolute;
+  bottom: 0;
+
+  transform: translate(-50%);
+  left: 50%;
+
+  color: white;
+  background-color: black;
+
+  width: fit-content;
+  padding: 0px 20px;
+
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#image1 {
+  background-image: url("images/img1.png");
+}
+#image2 {
+  background-image: url("images/img2.png");
+}
+#image3 {
+  background-image: url("images/img3.png");
+}
+#image4 {
+  background-image: url("images/img4.png");
+}
+
+/* opacity : 투명도를 의미해요! opacity는 1에 가까워 질 수록 불투명하다. 즉 다 보인다. */
+/* transition : 나타날 때 0.5초동안 천천히 나타나는 효과를 주라는 의미에요 */
+.showText {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+/* opacity : 투명도를 의미해요! opacity는 0에 가까워 질 수록 투명하다. 즉 안보인다. */
+.hideText {
+  opacity: 0;
+}

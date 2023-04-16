@@ -1,142 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-      /* 이서윤체 폰트 적용을 위한 코드 */
-      @font-face {
-        font-family: "LeeSeoyun";
-        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
-          format("woff");
-        font-weight: normal;
-        font-style: normal;
-      }
-
-    /* body태그 자체에 css 요소 부여 */
-    body {
-      font-family: "LeeSeoyun";
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_photos/background.png");
-    }
-
-    .container {
-      width: 390px;
-      background-color: #ff9d73;
-      height: 100%;
-    }
-
-    .photos {
-      margin-top: 30px;
-    }
-
-    .photo-frame {
-      background-color: white;
-      margin: 15px 20px;
-      height: 200px;
-
-      background-size: cover;
-
-      position: relative;
-    }
-
-    .footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .f-title {
-      color: white;
-      font-size: 25px;
-      font-weight: 900;
-    }
-
-    .f-date {
-      color: white;
-      font-size: 15px;
-      font-weight: 500;
-    }
-
-    .photo-description {
-      position: absolute;
-      bottom: 0;
-
-      transform: translate(-50%);
-      left: 50%;
-
-      color: white;
-      background-color: black;
-
-      width: fit-content;
-      padding: 0px 20px;
-
-      margin-bottom: 10px;
-      border-radius: 10px;
-    }
-
-    #image1 {
-      background-image: url("images/img1.png");
-    }
-    #image2 {
-      background-image: url("images/img2.png");
-    }
-    #image3 {
-      background-image: url("images/img3.png");
-    }
-    #image4 {
-      background-image: url("images/img4.png");
-    }
-
-    /* opacity : 투명도를 의미해요! opacity는 1에 가까워 질 수록 불투명하다. 즉 다 보인다. */
-    /* transition : 나타날 때 0.5초동안 천천히 나타나는 효과를 주라는 의미에요 */
-    .showText {
-      opacity: 1;
-      transition: opacity 0.5s linear;
-    }
-
-    /* opacity : 투명도를 의미해요! opacity는 0에 가까워 질 수록 투명하다. 즉 안보인다. */
-    .hideText {
-      opacity: 0;
-    }
-  </style>
-
-  <script>
-    function showText(number) {
-      document.querySelector(`#desc${number}`).classList.remove("hideText")
-      document.querySelector(`#desc${number}`).classList.add("showText")
-    }
-
-    function hideText(number) {
-      document.querySelector(`#desc${number}`).classList.remove("showText")
-      document.querySelector(`#desc${number}`).classList.add("hideText")
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div class="photos">
-      <div id="image1" class="photo-frame" onmouseover="showText(1)" onmouseout="hideText(1)">
-        <span id="desc1" class="photo-description hideText">우리 작년 1월에 동해 갔을 때 :)</span>
-      </div>
-      <div id="image2" class="photo-frame" onmouseover="showText(2)" onmouseout="hideText(2)">
-        <span id="desc2" class="photo-description hideText">작년 할로윈 파티</span>
-      </div>
-      <div id="image3" class="photo-frame" onmouseover="showText(3)" onmouseout="hideText(3)">
-        <span id="desc3" class="photo-description hideText">친구랑 싸웠을 때 위로해준 너</span>
-      </div>
-      <div id="image4" class="photo-frame" onmouseover="showText(4)" onmouseout="hideText(4)">
-        <span id="desc4" class="photo-description hideText">코딩 공부 시작한 날</span>
-      </div>
+    <div class="tab">
+        <h1 class="title">코딩네컷</h1>
+
+        <!-- 사진 추가 -->
     </div>
-    <div class="footer">
-      <p class="f-title">Happy Lunch Time</p>
-      <p class="f-date">2023.04.15</p>
+    
+    <div class="box">
+        <div id="cut1" class="photo-cuts">
+            <a href="cut1/index.html"> 컷1 </a>
+        </div>
+        <div id="cut2" class="photo-cuts">
+            <a href="cut1/index.html"> 컷2 </a>
+        </div>
+        <div id="cut3" class="photo-cuts">
+            <a href="cut1/index.html"> 컷3 </a>
+        </div>
+
+        
+        <div id="cut4" class="photo-cuts">
+            <a href="cut1/index.html"> 컷4 </a>
+        </div>
+        <div id="cut5" class="photo-cuts">
+            <a href="cut1/index.html"> 컷5 </a>
+        </div>
     </div>
-  </div>
 </body>
 </html>
