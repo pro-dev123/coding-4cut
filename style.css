@@ -44,10 +44,9 @@ p {
     background-color: lightgray;
 
     position: relative;
-}
 
-#cut1 {
-    background-image: linear-gradient(to left, rgb(136, 136, 136), transparent, transparent, rgb(136, 136, 136)), url(cut1/images/img1.png);
+    /* */
+
     background-size: contain;
     background-repeat: no-repeat;
 
